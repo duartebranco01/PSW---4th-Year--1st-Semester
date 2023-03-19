@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="145.0" maxWidth="510.0" minHeight="120.0" minWidth="510.0" prefHeight="120.0" prefWidth="510.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.itemsOWController">
+   <children>
+      <VBox prefHeight="145.0" prefWidth="357.0">
+         <children>
+            <Label fx:id="departure_airline1" prefHeight="20.0" prefWidth="325.0" text="Departure - Airline 1">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="116.0" prefWidth="342.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="118.0" prefWidth="342.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="120.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="departure_time1" text="07:25">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="departure_airport1" text="OPO" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="60.0" prefWidth="165.0">
+                           <children>
+                              <Label fx:id="flight_time1" text="3hs">
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Line endX="100.0" startX="-100.0">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin></Line>
+                              <Label fx:id="escalas" alignment="CENTER" prefHeight="17.0" prefWidth="204.0" text="OPO, BER, LAB" />
+                              <Label fx:id="flightID" text="flightID" visible="false" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="120.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="arrival_time1" text="07:25">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="arrival_airport1" text="OPO" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="145.0" prefWidth="184.0">
+         <children>
+            <VBox alignment="BOTTOM_CENTER" maxHeight="50.0" maxWidth="169.0" minHeight="51.0" minWidth="169.0" prefHeight="50.0" prefWidth="169.0">
+               <children>
+                  <Label fx:id="price" alignment="CENTER" contentDisplay="CENTER" maxHeight="53.0" maxWidth="121.0" minHeight="53.0" minWidth="83.0" prefHeight="53.0" prefWidth="121.0" text="130$" textFill="#df8597">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" maxHeight="68.0" maxWidth="169.0" minHeight="68.0" minWidth="169.0" prefHeight="68.0" prefWidth="169.0">
+               <children>
+                  <Button fx:id="add_to_cart" mnemonicParsing="false" onAction="#switchToPayment" prefHeight="63.0" prefWidth="125.0" style="-fx-background-color: #1E2E9A;" text="Buy Ticket" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <HBox alignment="TOP_CENTER" maxHeight="36.0" maxWidth="169.0" prefHeight="36.0" prefWidth="169.0">
+                     <children>
+                        <Label fx:id="error" alignment="CENTER" prefHeight="17.0" prefWidth="169.0" text="You have to be logged in" textFill="RED" visible="false">
+                           <HBox.margin>
+                              <Insets bottom="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

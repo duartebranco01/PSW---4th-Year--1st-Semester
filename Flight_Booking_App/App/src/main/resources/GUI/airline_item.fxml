@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="33.0" maxWidth="171.0" minHeight="33.0" minWidth="171.0" prefHeight="33.0" prefWidth="171.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.airlineController">
+   <children>
+      <RadioButton fx:id="airlineName" mnemonicParsing="false" onAction="#RemoveAirline" selected="true" text="Airline" />
+   </children>
+   <padding>
+      <Insets left="10.0" />
+   </padding>
+</HBox>

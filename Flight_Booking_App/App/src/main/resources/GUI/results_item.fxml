@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="145.0" maxWidth="510.0" minHeight="145.0" minWidth="510.0" prefHeight="145.0" prefWidth="510.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.itemsController">
+   <children>
+      <VBox prefHeight="145.0" prefWidth="357.0">
+         <children>
+            <Label fx:id="departure_airline1" text="Departure - Airline 1">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="50.0" prefWidth="357.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="120.0" prefWidth="357.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="120.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="departure_time1" text="07:25">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="departure_airport1" text="OPO" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="60.0" prefWidth="165.0">
+                           <children>
+                              <Label fx:id="flight_time1" text="3hs">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Line endX="100.0" startX="-100.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="120.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="arrival_time1" text="07:25">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="arrival_airport1" text="OPO" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="20.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="departure_airline2" text="Departure - Airline 1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="50.0" prefWidth="357.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="120.0" prefWidth="357.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="120.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="departure_time2" text="07:25">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="departure_airport2" text="OPO" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="60.0" prefWidth="165.0">
+                           <children>
+                              <Label fx:id="flight_time2" text="3hs">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Line endX="100.0" startX="-100.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="120.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="arrival_time2" text="07:25">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="arrival_airport2" text="OPO" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="145.0" prefWidth="184.0">
+         <children>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="101.0" prefWidth="184.0">
+               <children>
+                  <Label fx:id="flightID" text="Label" visible="false" />
+                  <Label fx:id="price" text="130$" textFill="#df8597">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="63.0" prefWidth="184.0">
+               <children>
+                  <Button fx:id="add_to_cart" mnemonicParsing="false" onAction="#switchToPayment" prefHeight="36.0" prefWidth="125.0" style="-fx-background-color: #1E2E9A;" text="Add to cart" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: #FFFFFF;" stylesheets="@font_and_color_design.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.paymentController">
+   <children>
+      <ImageView fitHeight="79.0" fitWidth="852.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/gradient.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="705.0" layoutY="22.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="33.0" prefWidth="110.0" style="-fx-background-color: #FFFFFF;" text="HOME" textFill="GREY">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="loganair" layoutX="100.0" layoutY="12.0" prefHeight="53.0" prefWidth="187.0" text="LOGAN AIR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#1f2f994d" height="410.0" layoutX="40.0" layoutY="114.0" stroke="#203099b2" strokeType="INSIDE" strokeWidth="4.0" width="477.0" />
+      <TextField fx:id="card_name" layoutX="75.0" layoutY="198.0" prefHeight="47.0" prefWidth="403.0" promptText="NAME">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="183.0" layoutY="424.0" mnemonicParsing="false" onAction="#validate_card" prefHeight="53.0" prefWidth="187.0" style="-fx-background-color: #DF8597; -fx-background-radius: 50;" text="VALIDATE CARD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="85.0" layoutY="152.0" text="NAME ON CARD" textFill="#1f2f99">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="275.0" text="CARD NUMBER" textFill="#1f2f99">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="53.0" fitWidth="48.0" layoutX="27.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#1f93ff00" height="211.0" layoutX="534.0" layoutY="116.0" stroke="#df8597" strokeType="INSIDE" strokeWidth="4.0" width="304.0" />
+      <Button layoutX="572.0" layoutY="436.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="53.0" prefWidth="218.0" style="-fx-background-color: #674C7C; -fx-background-radius: 50;" stylesheets="@font_and_color_design.css" text="CANCEL PURCHASE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="589.0" layoutY="22.0" mnemonicParsing="false" onAction="#logout" prefHeight="33.0" prefWidth="110.0" style="-fx-background-color: #FFFFFF;" text="LOGOUT" textFill="GREY">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="599.0" layoutY="137.0" text="YOUR PURCHASE" textFill="#1f2f99">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="finalize_error" layoutX="632.0" layoutY="497.0" prefHeight="25.0" prefWidth="109.0" text="Validate Card" textFill="#f40000" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="validate_image" fitHeight="53.0" fitWidth="58.0" layoutX="400.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@images/validate_icon.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="card_number" layoutX="75.0" layoutY="329.0" prefHeight="47.0" prefWidth="403.0" promptText="1234 1234 1234 1234">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="invalid_card" layoutX="238.0" layoutY="485.0" prefHeight="25.0" prefWidth="100.0" text="Invalid Card " textFill="#f40000" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="572.0" layoutY="359.0" mnemonicParsing="false" onAction="#finalize_purchase" prefHeight="53.0" prefWidth="218.0" style="-fx-background-color: #674C7C; -fx-background-radius: 50;" stylesheets="@font_and_color_design.css" text="FINALIZE PURCHASE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <VBox fx:id="purchaseLayout" alignment="TOP_CENTER" layoutX="554.0" layoutY="182.0" prefHeight="118.0" prefWidth="265.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,2 @@
+Database no longer exists, app wont work.
+Check the User Manual to see how it worked.

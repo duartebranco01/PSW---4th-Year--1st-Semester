@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: #FFFFFF;" stylesheets="@font_and_color_design.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.HelloController">
+   <children>
+      <ImageView fitHeight="79.0" fitWidth="852.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/gradient.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="login_button" layoutX="705.0" layoutY="22.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="33.0" prefWidth="110.0" style="-fx-background-color: #FFFFFFFF;" text="LOGIN" textFill="GREY">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Label fx:id="loganair" layoutX="100.0" layoutY="12.0" prefHeight="53.0" prefWidth="187.0" text="LOGAN AIR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Rectangle id="autocompleteDeparture" arcHeight="50.0" arcWidth="50.0" fill="#1f93ff00" height="200.0" layoutX="75.0" layoutY="103.0" stroke="#df8597" strokeType="INSIDE" strokeWidth="4.0" width="702.0" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#1f2f994d" height="200.0" layoutX="75.0" layoutY="323.0" stroke="#1f2f9966" strokeType="INSIDE" strokeWidth="4.0" width="702.0" />
+      <Label layoutX="358.0" layoutY="336.0" text="Best Deals" textFill="#1e2e9a">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="53.0" fitWidth="48.0" layoutX="27.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="549.0" layoutY="235.0" mnemonicParsing="false" onAction="#SearchFlights" prefHeight="40.0" prefWidth="187.0" style="-fx-background-color: #1E2E9A;" text="Search for flights" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="acDeparture" layoutX="128.0" layoutY="162.0" onMousePressed="#autocomplete" prefHeight="33.0" prefWidth="149.0" promptText="Search" />
+      <TextField fx:id="acArrival" layoutX="331.0" layoutY="162.0" onMousePressed="#autocomplete" prefHeight="33.0" prefWidth="149.0" promptText="Search" />
+      <Label layoutX="128.0" layoutY="129.0" text="Departure Airport" textFill="GREY">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="129.0" text="Arrival Airport" textFill="GREY">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dep_date" layoutX="128.0" layoutY="238.0" prefHeight="33.0" prefWidth="149.0" promptText="dd/mm/yyyy" />
+      <DatePicker fx:id="arr_date" layoutX="331.0" layoutY="238.0" prefHeight="33.0" prefWidth="149.0" promptText="dd/mm/yyyy" />
+      <Label fx:id="lab_arrival" layoutX="331.0" layoutY="213.0" text="Return Date" textFill="GREY">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="213.0" text="Departure Date" textFill="GREY">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rRound" layoutX="553.0" layoutY="131.0" mnemonicParsing="false" onAction="#tripWay" prefHeight="17.0" prefWidth="85.0" selected="true" text="Round Trip" textFill="GREY">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="way_l" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rOne" layoutX="647.0" layoutY="131.0" mnemonicParsing="false" onAction="#tripWay" prefHeight="17.0" prefWidth="85.0" text="One-Way" textFill="GREY" toggleGroup="$way_l">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="n_pass" layoutX="650.0" layoutY="162.0" onMousePressed="#autocomplete" prefHeight="33.0" prefWidth="109.0" promptText="No of passengers" />
+      <Label fx:id="param_error" layoutX="596.0" layoutY="277.0" text="Fill all parameters" textFill="#f40000" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="class_selector" layoutX="524.0" layoutY="162.0" opacity="0.55" prefHeight="33.0" prefWidth="109.0" promptText="Flight Class" style="-fx-background-color: #FFFFFF; -fx-border-color: #808080; -fx-border-radius: 3;" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="120.0" layoutX="178.0" layoutY="384.0" stroke="WHITE" strokeType="INSIDE" width="225.0" />
+      <ImageView fx:id="image1" fitHeight="120.0" fitWidth="125.0" layoutX="117.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/paris.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="120.0" layoutX="511.0" layoutY="384.0" stroke="WHITE" strokeType="INSIDE" width="225.0" />
+      <Label fx:id="city2Label" layoutX="576.0" layoutY="397.0" prefHeight="25.0" prefWidth="149.0" text="Porto - Paris" textFill="#6b6a6a">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image2" fitHeight="120.0" fitWidth="200.0" layoutX="450.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/edinburgo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="invalid_parameters" layoutX="590.0" layoutY="277.0" text="Invalid parameters" textFill="#f40000" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="city1Label" layoutX="240.0" layoutY="397.0" prefHeight="25.0" prefWidth="149.0" text="Porto - Paris" textFill="#6b6a6a">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="date1Label" layoutX="246.0" layoutY="421.0" prefHeight="17.0" prefWidth="149.0" text="25 dec - 28 dec">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="price1" alignment="CENTER" layoutX="315.0" layoutY="452.0" prefHeight="40.0" prefWidth="77.0" text="29€" textFill="#df8597">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="price2" alignment="CENTER" layoutX="651.0" layoutY="452.0" prefHeight="40.0" prefWidth="77.0" text="37€" textFill="#df8597">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="date2Label" layoutX="580.0" layoutY="421.0" prefHeight="17.0" prefWidth="149.0" text="25 dec - 28 dec">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="111.0" layoutY="383.0" mnemonicParsing="false" onAction="#buyBestDealsleftSide" prefHeight="120.0" prefWidth="295.0" style="-fx-background-radius: 100; -fx-opacity: 0;" />
+      <Button layoutX="442.0" layoutY="384.0" mnemonicParsing="false" onAction="#buyBestDealsRightSide" prefHeight="120.0" prefWidth="295.0" style="-fx-background-radius: 100; -fx-opacity: 0;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="TOP_RIGHT" prefHeight="118.0" prefWidth="265.0" style="-fx-background-color: f2ced5 DF8597; -fx-background-radius: 15;" stylesheets="@purchase_tickets_design.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.purchaseController">
+   <children>
+      <VBox prefHeight="118.0" prefWidth="175.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="31.0" prefWidth="173.0">
+               <children>
+                  <Label fx:id="airports" prefHeight="27.0" prefWidth="201.0" text="OPO - PEK">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="173.0">
+               <children>
+                  <Label fx:id="time" prefHeight="17.0" prefWidth="286.0" text="08:05 - 19:50">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="date_class" prefHeight="17.0" prefWidth="117.0" text="14/01 First Class ">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="63.0" prefWidth="75.0">
+                     <children>
+                        <ImageView fitHeight="22.0" fitWidth="18.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@images/userIcon.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="passengers" text="200">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="2.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="118.0" prefWidth="94.0">
+         <children>
+            <Label fx:id="price" text="1000 €" textFill="#203099">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</HBox>

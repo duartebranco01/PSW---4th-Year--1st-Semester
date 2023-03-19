@@ -1,0 +1,78 @@
+.text
+{
+    -fx-font-family: 'IBM Plex Sans', sans-serif;
+    -fx-text-fill: black;
+
+}
+
+.label
+{
+    -fx-font-family: 'IBM Plex Sans', sans-serif;
+    -fx-text-fill: black;
+
+}
+
+#price
+{
+    -fx-font-family: 'IBM Plex Sans', sans-serif;
+    -fx-text-fill: #1E2E9A;
+
+}
+
+#price2
+{
+    -fx-font-family: 'IBM Plex Sans', sans-serif;
+    -fx-text-fill: #1E2E9A;
+
+}
+
+#date_class
+{
+    -fx-font-size: 11px;
+    -fx-font-family: 'IBM Plex Sans', sans-serif;
+    -fx-text-fill: #5d5d5d
+}
+
+#date_class2
+{
+    -fx-font-size: 11px;
+    -fx-font-family: 'IBM Plex Sans', sans-serif;
+    -fx-text-fill: #5d5d5d
+}
+
+#passengers
+{
+    -fx-font-size: 11px;
+    -fx-font-family: 'IBM Plex Sans', sans-serif;
+    -fx-text-fill: #5d5d5d
+}
+
+
+#time
+{
+    -fx-font-weight: bold;
+    -fx-font-family: 'IBM Plex Sans', sans-serif;
+    -fx-text-fill: #5d5d5d
+}
+
+#time2
+{
+    -fx-font-weight: bold;
+    -fx-font-family: 'IBM Plex Sans', sans-serif;
+    -fx-text-fill: #5d5d5d
+}
+
+#airports
+{
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#airports2
+{
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'IBM Plex Sans', sans-serif;
+}
+

@@ -1,0 +1,45 @@
+.button {
+
+
+    -fx-background-color: #1E2E9A;
+    -fx-opacity: 1.0;
+}
+
+#cheapest_order_button: focused {
+
+    -fx-background-color: #DF8597;
+    -fx-text-fill: #1E2E9A;
+    -fx-opacity: 1.0;
+    -fx-background-insets: 0 0 0 0, 0, 1, 200;
+}
+
+#cheapest_order_button: hover {
+
+-fx-background-insets: 0 0 0 0, 0, 1, 200;
+
+}
+
+#fastest_order_button: focused {
+    -fx-background-color: #DF8597;
+    -fx-text-fill: #1E2E9A;
+    -fx-opacity: 1.0;
+}
+
+#fastest_order_button: hover {
+
+-fx-background-insets: 0 0 0 0, 0, 1, 200;
+
+}
+
+#bestoption_order_button: focused {
+
+    -fx-background-color: #DF8597;
+    -fx-text-fill: #1E2E9A;
+    -fx-opacity: 1.0;
+}
+
+#bestoption_order_button: hover {
+
+-fx-background-insets: 0 0 0 0, 0, 1, 200;
+
+}
